@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Shop</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Axar's Pizza Shop</h1>
+        <form>
+            <fieldset>
+                <legend>Customer Information:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                    <div>
+                        <label for="number">Phone Number</label>
+                        <input id="number" name="phone_number" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Base of the Pizza:</legend>
+                    <div>
+                        <input type="radio" id="cheese" name="cheese">
+                        <label for="cheese">Cheese</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="stuffedcrust" name="stuffedcrust">
+                        <label for="stuffedcrust">Stuffed Crust</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="thincrust" name="thincrust">
+                        <label for="thincrust">Thin Crust</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="large">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>How to Get the Pizza:</legend>
+                    <div>
+                        <input type="radio" id="pickup" name="pickup">
+                        <label for="pickup">Pick-Up</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="delivery" name="delivery">
+                        <label for="delivery">Delivery</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dinein" name="dinein">
+                        <label for="dinein">Dine-In</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additions:</legend>
+                    <div>
+                        <input type="checkbox" id="veggies" name="veggies" value="veggies">
+                        <label for="veggies">Veggies</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extracheese" name="extracheese" value="extracheese">
+                        <label for="extracheese">Extra Cheese</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Drinks:</legend>
+                <label for="container">Please Choose One:</label>
+                <select name="container" id="container">
+                    <option value="water">Water</option>
+                    <option value="fountainDrink">Fountain Drink</option>
+                    <option value="none">None</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Extra Notes:</legend>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10"
+                          placeholder="Things on the side, requests for less of something, etc."></textarea>
+            </fieldset>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
